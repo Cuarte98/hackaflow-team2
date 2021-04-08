@@ -1,0 +1,27 @@
+.auth-container {
+  display: flex;
+}
+
+.auth-container > .grid {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.grid > div {
+  width: 80px;
+  height: 80px;
+  background-color: tomato;
+}
+
+.input-box {
+  width: 300px;
+  height: 160px;
+}
+
+.input-box input {
+  width: 80px;
+  height: 80px;
+}
