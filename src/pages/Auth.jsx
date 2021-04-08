@@ -3,7 +3,10 @@ import Button from '../components/Button'
 import './Auth.css'
 import KeyCodes from '../utils/keycodes'
 
-const images = KeyCodes.map(k => <div key={k.id} id={k.id}>{k.id}</div>)
+ const images = KeyCodes.map(k => (
+    <img src={k.path} key={k.id} id={k.id} alt="" />
+//     //<div key={k.id} id={k.id}>{k.id}</div>
+ ))
 
 const Auth = () => {
     return (
