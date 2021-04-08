@@ -14,5 +14,5 @@ export const defaultHttpHeaders = {
 };
 
 export const endPoints = {
-  authCodeFatality: "https://auth-code-fatality",
+  authCodeFatality: "https://fatality-api.herokuapp.com/auth-code-fatality",
 };

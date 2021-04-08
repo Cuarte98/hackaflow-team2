@@ -33,7 +33,7 @@ const KeyCodes = [
   },
   {
     id: 9,
-    path: "imgs/0.jpg",
+    path: "imgs/9.jpg",
   },
 ];
 

@@ -1,15 +1,20 @@
 import { defaultHttpHeaders, endPoints } from "./client.js";
 
 export const Device = {
-  id: "",
-  name: "",
-  mac: "",
-};
-export const ResponseAuthCodeFatality = {
-  mock: "",
+  code: [],
 };
 
-const checkDevice = (device = Device) => device.id && device.name && device.mac;
+export const ResponseAuthCodeFatality = {
+  perfil: "",
+  token: "",
+};
+
+export const ErrorAuthCodeFatality = {
+  statusCode: 500,
+  message: "Internal Server Error",
+};
+
+const checkDevice = (device = Device) => device && device.id && device.code;
 
 const sendAuthCodeFatality = async (device = Device) => {
   if (!checkDevice(device)) {
